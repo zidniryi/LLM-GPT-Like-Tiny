@@ -2,6 +2,9 @@
 
 This project is built with **Ollama** and **TinyLlama** to create a lightweight Large Language Model (LLM) application. The backend, powered by Express.js, processes requests and communicates with the TinyLlama model, while the frontend, developed in React.js, provides a user-friendly interface for interaction.
 
+![Alt text](https://i.ibb.co/wg7Ks32/Screenshot-2024-10-26-at-12-54-27.png)
+![Alt text](https://i.ibb.co/qs04TD2/Screenshot-2024-10-26-at-12-03-32.png)
+
 ## Table of Contents
 
 - [Features](#features)
