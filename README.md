@@ -139,7 +139,7 @@ Once both servers are running, open your browser and navigate to `http://localho
 
 The backend exposes an API endpoint to interact with the TinyLlama model programmatically.
 
-- **Endpoint**: POST `/api/llm/chat`
+- **Endpoint**: POST `http://localhost:3001/generate`
 
 **Request Payload**:
 
