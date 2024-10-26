@@ -1,6 +1,14 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors'); // Import the cors package
 const app = express();
+
+// Use the cors middleware to allow requests from your React app
+const allowedOrigins = ['http://localhost:3000']; // Adjust this URL to match your React app's URL
+
+app.use(cors({
+  origin: allowedOrigins,
+}));
 app.use(express.json());
 
 app.post('/generate', async (req, res) => {
