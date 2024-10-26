@@ -64,7 +64,7 @@ Follow the steps below to install and run the project on your local machine.
    Clone the project repository to your local machine:
 
    ```bash
-   git clone https://github.com/zidniryi/tinyllama-llm-project.git
+   git clone https://github.com/zidniryi/LLM-GPT-Like-Tiny
    cd tinyllama-llm-project
    ```
 
@@ -186,8 +186,3 @@ Contributions are welcome! Please fork the repository and create a pull request 
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-This format ensures everything is contained within a single Markdown block for easy copy-pasting. Let me know if you need any more adjustments!
-```
