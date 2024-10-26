@@ -39,7 +39,11 @@ const App = () => {
       <Header>
         <div className="logo" />
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['about']}>
-          <Menu.Item key="about">About</Menu.Item>
+          <Menu.Item key="about">
+            <a href="https://zidniryi.github.io/" target="_blank" rel="noopener noreferrer">
+              About
+            </a>
+          </Menu.Item>
         </Menu>
       </Header>
       <Content style={{padding: '50px'}}>
