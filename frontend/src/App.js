@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import {Layout, Menu, Input, Button, Typography, Spin} from 'antd';
-import 'antd/dist/antd.css'; // Import Ant Design styles
+import 'antd/dist/reset.css';
 import './App.css'; // Custom styles
 
 const {Header, Content, Footer} = Layout;
@@ -44,7 +44,7 @@ const App = () => {
       </Header>
       <Content style={{padding: '50px'}}>
         <div className="site-layout-content">
-          <Title level={2}>GPT-like Generator</Title>
+          <Title level={2}>GPT-like open endeavor with TinyLlama</Title>
           <Input.TextArea
             rows={4}
             placeholder="Type your prompt here..."
@@ -73,7 +73,10 @@ const App = () => {
         </div>
       </Content>
       <Footer style={{textAlign: 'center'}}>
-        GPT-like Generator ©{new Date().getFullYear()} Created by You
+        GPT-like Generator (Tinyllama) ©{new Date().getFullYear()} {` `}
+        <a href="https://www.linkedin.com/in/zidni-ridwan-nulmuarif/" target="_blank" rel="noopener noreferrer">
+          Zidni Ridwan Nulmuarif
+        </a>
       </Footer>
     </Layout>
   );

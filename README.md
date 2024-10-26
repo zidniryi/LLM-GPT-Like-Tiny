@@ -41,7 +41,6 @@ tinyllama-llm-project/
 ├── frontend/               # Frontend files (React.js)
 │   ├── src/
 │   │   ├── App.js          # Main App component
-│   │   └── services/       # API services to communicate with backend
 │   └── package.json
 └── README.md
 ```
@@ -99,7 +98,7 @@ Follow the steps below to install and run the project on your local machine.
 
 4. **Set Up Ollama**
 
-   Ensure Ollama and TinyLlama are installed and configured on your system. Follow [Ollama's official documentation](https://ollama.com/docs/cli) for setup instructions.
+   Ensure Ollama and TinyLlama are installed and configured on your system. Follow [Ollama's official documentation](https://ollama.com/) for setup instructions.
 
 ---
 
@@ -143,7 +142,10 @@ The backend exposes an API endpoint to interact with the TinyLlama model program
 
 ```json
 {
-  "message": "Hello, TinyLlama!"
+  "model": "tinyllama",
+  "prompt": "What colow of the sky",
+  "raw": true,
+  "stream": false
 }
 ```
 
@@ -151,7 +153,17 @@ The backend exposes an API endpoint to interact with the TinyLlama model program
 
 ```json
 {
-  "response": "Hello! How can I assist you today?"
+  "model": "tinyllama",
+  "created_at": "2024-10-26T05:56:34.946112Z",
+  "response": " was it? \n“Was it blue?” asks the boy.\n\nThe sky was a blue-white glow,  \nA sight so beautiful to behold.\n\nAnd the stars sparkled like diamonds,  \nShining brightly in the night's dark, clear sky.\n\nThe moon shone high and bright above,  \nA light that illuminated all below.\n\nBut even as it grew into the night,  \nThe moon cast a dim but ever-lasting glow.\n\nFor when the stars began to fade away,  \nAnd the last of their light was gone,  \nA silence descended upon the night,  \nAs though the world were waiting for peace.",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 8206857666,
+  "load_duration": 4364864791,
+  "prompt_eval_count": 7,
+  "prompt_eval_duration": 82870000,
+  "eval_count": 156,
+  "eval_duration": 3753873000
 }
 ```
 

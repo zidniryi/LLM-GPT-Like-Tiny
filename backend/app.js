@@ -4,7 +4,7 @@ const cors = require('cors'); // Import the cors package
 const app = express();
 
 // Use the cors middleware to allow requests from your React app
-const allowedOrigins = ['http://localhost:3000']; // Adjust this URL to match your React app's URL
+const allowedOrigins = ['http://localhost:3000', "192.168.6.124:3000"]; // Adjust this URL to match your React app's URL
 
 app.use(cors({
   origin: allowedOrigins,
